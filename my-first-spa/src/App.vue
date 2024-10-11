@@ -1,10 +1,8 @@
-<!-- src/App.vue -->
 <template>
   <div id="app">
     <AppHeader />
     <main>
-      <h2>Página Inicial</h2>
-      <p>Bem-vindo ao meu site!</p>
+      <router-view />
     </main>
     <AppFooter />
   </div>
@@ -18,7 +16,7 @@ export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter,
+    AppFooter
   },
 };
 </script>
@@ -29,6 +27,7 @@ export default {
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex: 1;
   padding: 20px;
