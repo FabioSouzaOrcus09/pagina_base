@@ -2,10 +2,17 @@
   <div id="app">
     <AppHeader />
     <main>
+      <RouterLink to="/naruto"> Naruto</RouterLink>
       <router-view />
+
+      
+
     </main>
+
     <AppFooter />
   </div>
+
+
 </template>
 
 <script>
